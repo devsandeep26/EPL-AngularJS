@@ -1,60 +1,71 @@
-<div class="container-fluid">
-    <div class="row"  style="background-color:#000;color:#fff">
+<div class="container-fluid" style="overflow:hidden">
+    <div class="row"  style="background-color:#6F1E51;color:#fff">
          <div class="col-md-12 section-header">
             <h3 align="center">Search your favourite team</h3>
         </div>
         <div class="col-md-6">
             <div class="input-group">
+                <div class="margin1">
                 <label for="team1">Search Team 1</label><br>
-                <input class="form" type="text" name="team" class="form-control" id="team1" placeholder="Enter name" ng-model="searchTeam.team1.name" style="width:400px;margin-bottom:5px;">
+                <input class="form-control" type="text" name="team" class="form-control" id="team1" placeholder="Enter name" ng-model="searchTeam.team1.name" style="width:30rem">
+                </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="input-group">
+                <div class="margin1">
                 <label for="team1">Search Team 2</label><br>
-                <input type="text" name="team" class="form-control" id="team1" placeholder="Enter name" ng-model="searchTeam.team2.name" style="width:400px;margin-bottom:5px;">
+                <input type="text" name="team" class="form-control" id="team1" placeholder="Enter name" ng-model="searchTeam.team2.name" style="width:30rem" >
+                </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="input-group">
+                <div class="margin1">
                 <label for="date"> Search Date </label><br>
-                <input type="text" name="date" class="form-control" id="date" placeholder="yyyy-mm-dd" ng-model="searchTeam.date" style="width:400px;margin-bottom:5px;">
+                <input type="text" name="date" class="form-control" id="date" placeholder="yyyy-mm-dd" ng-model="searchTeam.date" style="width:30rem" >
+                </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="input-group">
+                <div class="margin1">
                 <label for="team1">Enter match day</label><br>
-                <input type="text" name="day" class="form-control" id="day" placeholder="Enter match day" ng-model="matchDay.name"style="width:400px;margin-bottom:5px;">
+                <input type="text" name="day" class="form-control" id="day" placeholder="Enter match day" ng-model="matchDay.name" style="width:30rem">
+                </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="input-group">
+                <div class="margin1">
                 <label for="team1">seacrh by team 1 goals</label><br>
-                <input type="text" name="score" class="form-control" id="filter-score1" placeholder="Enter score" ng-model="searchTeam.score1" style="width:400px;margin-bottom:5px;">
+                <input type="text" name="score" class="form-control" id="filter-score1" placeholder="Enter score" ng-model="searchTeam.score1" style="width:30rem" ><br><br>
+                </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="input-group">
+                <div class="margin1">
                 <label for="team1">seacrh by team 2 goals</label><br>
-                <input type="text" name="score" class="form-control" id="filter-score1" placeholder="Enter score" ng-model="searchTeam.score2" style="width:400px;margin-bottom:5px;">
+                <input type="text" name="score" class="form-control" id="filter-score1" placeholder="Enter score" ng-model="searchTeam.score2" style="width:30rem"><br><br>
+                    </div>
             </div>
         </div>
 
-
+        </div>
 
 
 
     </div>
 
 
-</div>
 
-
-<section class="match" >
-    <hr>
+<section class="match">
     <div class="container-fluid" style="background-color:#E9EBEE">
         <div class="row">
-            <div class="col-md-6 custom" ng-init="epl.dataForTeam15()">
+            
+            <div class="col-lg-6 col-md-6" ng-init="epl.dataForTeam15()">
+                <div class="work1">
                 <h1 style="background-color:white;color: black"> SEASON 2015</h1>
                 <div ng-repeat="data in epl.team15  | filter:matchDay">
 
@@ -71,7 +82,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-offset-1 col-md-5 custom1" ng-init="epl.dataForTeam16()">
+            </div>
+            <div class="col-lg-6 col-md-6" ng-init="epl.dataForTeam16()">
+                <div class="work1">
                 <h1 style="background-color:white;color:black"> SEASON 2016</h1>
                 <div ng-repeat="data in epl.team16 | filter:matchDay">
                     <div ng-repeat="item in data.matches | filter:searchTeam">
@@ -85,6 +98,7 @@
                         </a>
                         <br>
                         <br>
+                    </div>
                     </div>
                 </div>
             </div>

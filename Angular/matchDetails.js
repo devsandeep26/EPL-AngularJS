@@ -19,7 +19,7 @@ myApp.controller("matchDetails", ['$http', '$location', '$routeParams', function
        
     ==================================*/
     this.goBack = function () {
-        $location.path('/');
+        $location.path("/match-view");
     }
     /*=========================
     logic for getting match details individually

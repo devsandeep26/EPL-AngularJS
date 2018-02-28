@@ -1,16 +1,17 @@
 /*======================
    universal selectors 
 ======================*/
+
 * {
-     margin: 0;
-        padding: 0;
-       
-   
+    margin: 0;
+    padding: 0;
 }
+
 
 /*==============
    universal selectors 
 ======================*/
+
 body {
     font-family: "Poppins";
     font-weight: 400;
@@ -18,41 +19,43 @@ body {
     color: #000;
     height: 100%;
 }
+
+
 /*===========================
     for hero image background
      customization
 ==============================*/
+
 .header {
     height: 100vh;
-   
-    background-image:-webkit-gradient(linear,left bottom, right top,from(rgba(232, 67, 147, 0.6)),to(rgba(253, 121, 168, 0.6))),url(../images/mitch-rosen-137327.jpg);
-   
-    background-image:linear-gradient(to right top,rgba(232, 67, 147, 0.6),rgba(253, 121, 168, 0.6)),url(../images/hero.jpg);
+    background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(232, 67, 147, 0.6)), to(rgba(253, 121, 168, 0.6))), url(../images/mitch-rosen-137327.jpg);
+    background-image: linear-gradient(to right top, rgba(232, 67, 147, 0.6), rgba(253, 121, 168, 0.6)), url(../images/hero.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    
 }
+
 .container-fluid {
-    padding-right: 0px; 
-    padding-left: 0px; 
+    padding-right: 0px;
+    padding-left: 0px;
     margin-right: auto;
-    margin-left: auto; 
+    margin-left: auto;
 }
+
 
 /*======================
    navbar customization
 ======================*/
+
 .epl-nav {
     background: #38003C;
     padding: 0;
 }
+
 .brand-logo {
     height: 40px;
 }
-
-
 
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover {
@@ -70,6 +73,7 @@ body {
 .navbar-inverse .navbar-brand {
     color: #fff;
 }
+
 .navbar {
     margin-bottom: 0;
 }
@@ -101,29 +105,34 @@ body {
     position: relative;
     /* this can also be static */
 }
+
+
 /*======================
    hero text box customization
 ======================*/
+
 .text-box {
     position: absolute;
     top: 40%;
     left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
+
 .heading {
-  color: #fff;
-    
+    color: #fff;
 }
+
 .primary {
     text-transform: uppercase;
-   display: block;
+    display: block;
     font-size: 60px;
     font-weight: 700;
     letter-spacing: 3px;
     color: #38003C
 }
+
 .secondary {
     text-transform: uppercase;
     display: block;
@@ -133,110 +142,163 @@ body {
     letter-spacing: 5px;
     color: #38003C;
 }
+
 .btn:link,
 .btn:visited {
-  text-transform:   uppercase;
-  text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: none;
     padding: 15px 40px;
     display: inline-block;
     color: #fff;
-   
 }
+
 .btn-hero {
-    background-color:#38003C;
+    background-color: #38003C;
     color: #fff;
     font-size: 20px;
     font-weight: 400;
 }
-.custom,.custom1 {
+
+.custom,
+.custom1 {
     border: 1px solid red;
     padding: 20px;
     min-height: 20px;
     color: #fff;
     background-color: #38003C;
-    margin-top: 20px;
 }
+
 .section-header h3 {
     padding: 20px 0;
     font-weight: 500;
     font-size: 3rem;
-   
+    color: #fff;
+    margin: 0px 0px 0px 0px;
 }
+
 .m1 {
-    margin-top: 30px;
+    background-color: #38003C;
 }
-.blue {
-    background-color:#38003C;
+
+.text {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
 }
-.blue h4 {
-    margin-left: 35%;
+
+
+/*=======================
+for team anchr element
+  customization
+========================*/
+
+.underline,
+.underline:hover,
+.underline:focus {
+    text-decoration: none;
+    color: #fff;
 }
-.underline {
-    text-decoration:none;
-    color:#fff;
-}
-.ONE {
+/*======================
+customization for stats div
+========================*/
+
+.work {
+    padding: 40px;
+    min-height: 300px;
+    overflow: hidden;
+    margin: 15px;
     background: linear-gradient(#38003C, rgba(56, 0, 60, 0.8));
     color: #fff;
     border-radius: 10px;
-    
 }
-.m2 {
+/*======================
+customization for matches div
+========================*/
+
+
+.work1 {
+    padding: 40px;
+    min-height: 700px;
+    overflow: hidden;
+    margin: 15px;
+    background: linear-gradient(#38003C, rgba(56, 0, 60, 0.8));
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+/*===================
+
+margin for search
+    filters
+=====================*/
+
+.margin1 {
     margin-left: 10%;
+    margin-bottom: 5px;
 }
+/*===================
+ css customization for the
+   team stats
+ 
+=====================*/
+
 .ONE h5 {
     color: #fff;
-     font-size: 2rem;
+    font-size: 2rem;
     text-align: center;
 }
+
 .TWO {
     position: relative;
     margin-top: 30px;
-     background-color: #fff;
+    background-color: #fff;
 }
-.f1 h5 {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 700;
-}
+
+
+
 /*======================
    media queries for small
        devices
 ======================*/
-@media(max-width:480px){
+
+@media(max-width:480px) {
     .primary {
-    text-transform: uppercase;
-   display: block;
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: #38003C
-}
-.secondary {
-    text-transform: uppercase;
-    display: block;
-    
-    font-weight: 500;
-    font-size: 3rem;
-    letter-spacing: 5px;
-    color: #38003C;
-}
+        text-transform: uppercase;
+        display: block;
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #38003C
+    }
+    .secondary {
+        text-transform: uppercase;
+        display: block;
+        font-weight: 500;
+        font-size: 3rem;
+        letter-spacing: 5px;
+        color: #38003C;
+    }
     .btn:link,
-.btn:visited,
-    .btn:hover{
-  text-transform:   uppercase;
-  text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-   
+    .btn:visited,
+    .btn:hover {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+    }
+    .btn-hero {
+        background-color: #38003C;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 400;
+    }
 }
-.btn-hero {
-    background-color:#38003C;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 400;
-}
-}
+/*============================
+    for going back button 
+    css customizatin
+
+=============================*/
+
 .button1 {
     background-color: #38003C;
     border-radius: 5px;

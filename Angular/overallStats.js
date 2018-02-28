@@ -23,7 +23,7 @@ myApp.controller("statsController", ['$http', '$location', '$routeParams', funct
     this.rounds = [];
 
     this.goBack = function () {
-        $location.path('/');
+        $location.path('/teamView');
     }
 
     //url request for football data
