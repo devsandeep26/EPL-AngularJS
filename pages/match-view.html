@@ -1,0 +1,93 @@
+<div class="container-fluid">
+    <div class="row"  style="background-color:#000;color:#fff">
+         <div class="col-md-12 section-header">
+            <h3 align="center">Search your favourite team</h3>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <label for="team1">Search Team 1</label><br>
+                <input class="form" type="text" name="team" class="form-control" id="team1" placeholder="Enter name" ng-model="searchTeam.team1.name" style="width:400px;margin-bottom:5px;">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <label for="team1">Search Team 2</label><br>
+                <input type="text" name="team" class="form-control" id="team1" placeholder="Enter name" ng-model="searchTeam.team2.name" style="width:400px;margin-bottom:5px;">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <label for="date"> Search Date </label><br>
+                <input type="text" name="date" class="form-control" id="date" placeholder="yyyy-mm-dd" ng-model="searchTeam.date" style="width:400px;margin-bottom:5px;">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <label for="team1">Enter match day</label><br>
+                <input type="text" name="day" class="form-control" id="day" placeholder="Enter match day" ng-model="matchDay.name"style="width:400px;margin-bottom:5px;">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <label for="team1">seacrh by team 1 goals</label><br>
+                <input type="text" name="score" class="form-control" id="filter-score1" placeholder="Enter score" ng-model="searchTeam.score1" style="width:400px;margin-bottom:5px;">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <label for="team1">seacrh by team 2 goals</label><br>
+                <input type="text" name="score" class="form-control" id="filter-score1" placeholder="Enter score" ng-model="searchTeam.score2" style="width:400px;margin-bottom:5px;">
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+</div>
+
+
+<section class="match" >
+    <hr>
+    <div class="container-fluid" style="background-color:#E9EBEE">
+        <div class="row">
+            <div class="col-md-6 custom" ng-init="epl.dataForTeam15()">
+                <h1 style="background-color:white;color: black"> SEASON 2015</h1>
+                <div ng-repeat="data in epl.team15  | filter:matchDay">
+
+                    <div ng-repeat="item in data.matches | filter:searchTeam">
+                        <a ng-href="#/match/{{ item.team1.code }}/{{ item.team2.code }}/{{ item.date }}" style="text-decoration:none;color:#fff" :>
+                            <h6>{{data.name}}</h6>
+                            <h6>Date:{{ item.date | date:"dd-MM-yy" }}</h6>
+                            <h4 style="display:inline">{{ item.team1.name}}</h4> vs
+                            <h4 style="display:inline">{{ item.team2.name}}</h4>
+                            <hr>
+                        </a>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-offset-1 col-md-5 custom1" ng-init="epl.dataForTeam16()">
+                <h1 style="background-color:white;color:black"> SEASON 2016</h1>
+                <div ng-repeat="data in epl.team16 | filter:matchDay">
+                    <div ng-repeat="item in data.matches | filter:searchTeam">
+                        <a ng-href="#/match/{{ item.team1.code }}/{{ item.team2.code }}/{{ item.date }}" style="text-decoration:none;color:#fff" :>
+                            <h6>{{data.name}}</h6>
+                            <h6>Date:{{ item.date | date:"dd-MM-yy" }}</h6>
+                            <h4 style="display:inline">{{ item.team1.name}}</h4> vs
+                            <h4 style="display:inline">{{ item.team2.name}}</h4>
+                            <hr>
+
+                        </a>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

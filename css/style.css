@@ -1,0 +1,249 @@
+/*======================
+   universal selectors 
+======================*/
+* {
+     margin: 0;
+        padding: 0;
+       
+   
+}
+
+/*==============
+   universal selectors 
+======================*/
+body {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    height: 100%;
+}
+/*===========================
+    for hero image background
+     customization
+==============================*/
+.header {
+    height: 100vh;
+   
+    background-image:-webkit-gradient(linear,left bottom, right top,from(rgba(232, 67, 147, 0.6)),to(rgba(253, 121, 168, 0.6))),url(../images/mitch-rosen-137327.jpg);
+   
+    background-image:linear-gradient(to right top,rgba(232, 67, 147, 0.6),rgba(253, 121, 168, 0.6)),url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.container-fluid {
+    padding-right: 0px; 
+    padding-left: 0px; 
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+/*======================
+   navbar customization
+======================*/
+.epl-nav {
+    background: #38003C;
+    padding: 0;
+}
+.brand-logo {
+    height: 40px;
+}
+
+
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #38003C;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+.navbar {
+    margin-bottom: 0;
+}
+
+.nav-style {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.navbar-toggle {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: :1px solid #fff;
+    padding: 6px 8px;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #38003C;
+    border-color: #fff;
+    border-radius: 0;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+    border-radius: 0;
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    position: relative;
+    /* this can also be static */
+}
+/*======================
+   hero text box customization
+======================*/
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.heading {
+  color: #fff;
+    
+}
+.primary {
+    text-transform: uppercase;
+   display: block;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #38003C
+}
+.secondary {
+    text-transform: uppercase;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: #38003C;
+}
+.btn:link,
+.btn:visited {
+  text-transform:   uppercase;
+  text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    color: #fff;
+   
+}
+.btn-hero {
+    background-color:#38003C;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.custom,.custom1 {
+    border: 1px solid red;
+    padding: 20px;
+    min-height: 20px;
+    color: #fff;
+    background-color: #38003C;
+    margin-top: 20px;
+}
+.section-header h3 {
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 3rem;
+   
+}
+.m1 {
+    margin-top: 30px;
+}
+.blue {
+    background-color:#38003C;
+}
+.blue h4 {
+    margin-left: 35%;
+}
+.underline {
+    text-decoration:none;
+    color:#fff;
+}
+.ONE {
+    background: linear-gradient(#38003C, rgba(56, 0, 60, 0.8));
+    color: #fff;
+    border-radius: 10px;
+    
+}
+.m2 {
+    margin-left: 10%;
+}
+.ONE h5 {
+    color: #fff;
+     font-size: 2rem;
+    text-align: center;
+}
+.TWO {
+    position: relative;
+    margin-top: 30px;
+     background-color: #fff;
+}
+.f1 h5 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+/*======================
+   media queries for small
+       devices
+======================*/
+@media(max-width:480px){
+    .primary {
+    text-transform: uppercase;
+   display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #38003C
+}
+.secondary {
+    text-transform: uppercase;
+    display: block;
+    
+    font-weight: 500;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: #38003C;
+}
+    .btn:link,
+.btn:visited,
+    .btn:hover{
+  text-transform:   uppercase;
+  text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+   
+}
+.btn-hero {
+    background-color:#38003C;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+}
+.button1 {
+    background-color: #38003C;
+    border-radius: 5px;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}

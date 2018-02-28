@@ -1,0 +1,80 @@
+<html ng-app='EPL'>
+
+<head>
+    <title>EPL</title>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- fav icon link -->
+    <link rel="shortcut icon" href="images/favicon%20(1).ico">
+    <!-- animate css link -->
+    <link rel="stylesheet" href="css/animate/animate.css" type="text/css">
+    <!--- google font links -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <!-- css file link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar epl-nav navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="own-nav-wrapper">
+                <div class="navbar-header">
+                    <button role="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#own-menu">
+                <span class="sr-only">toggle navigation</span>
+                    <span class="icon-bar"></span>
+                     <span class="icon-bar">
+                    </span>
+                     <span class="icon-bar">
+                    </span></button>
+                    <a class="navbar-brand nav-style" href="#home"><img class="brand-logo" src="images/premier-league-logo-header%20(1).png"></a>
+
+                </div>
+                <div class="collapse navbar-collapse" id="own-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="right-side-button" ng-href='#/index'>home</a></li>
+                        <li><a class="right-side-button" ng-href='#/match-view'>matches</a></li>
+                        <li><a class="right-side-button" ng-href="#/teamView">Teams</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+        <section class="header">
+
+            <div class="text-box">
+                <h1 class="heading">
+
+                    <span class="primary animated fadeInLeft">PREMIER LEAGUE</span>
+                    <span class="secondary animated fadeInRight">try it you'll like it</span>
+                </h1>
+                <a ng-href="#/teamView" class="btn btn-hero animated fadeInUp">find your favorite team</a>
+            </div>
+        </section>
+    <!-- end of hero image and text box -->
+    <!--============
+        angular-view
+      =============-->
+    <div ng-view>
+
+    </div>
+    <!-- angularJS main file -->
+    <script type="text/javascript" src="Angular/angular.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.6.9/angular-route.min.js"></script>
+    <!-- custom angular file -->
+    <script type="text/javascript" src="Angular/app.js"></script>
+    <script type='text/javascript' src="Angular/matchDetails.js"></script>
+    <script type="text/javascript" src="Angular/overallStats.js"></script>
+    <script type="text/javascript" src="Angular/route.js"></script>
+    <!-- bootstrap and jquery linking -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
